@@ -1,164 +1,398 @@
+<!-- README.md -->
 <div align="center">
-  
-<img src="https://github.com/alisakkaf/Smart-Screen-Unlocker-Recovery/blob/main/icon.png?raw=true" alt="Smart Screen Unlocker Logo" width="150"/> 
 
+<img src="frontend/static/images/logo.svg" alt="Smart Recovery Logo" width="200"/>
 
-# 🔓 Smart Screen Unlocker Recovery v1.0
+# 🔓 Smart Recovery Platform
 
-[![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg?style=for-the-badge&logo=windows&logoColor=black)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)]()
+### Professional Android Recovery & FRP Bypass Suite
 
+[![Python](https://img.shields.io/badge/Python-3.8+-orange.svg?style=for-the-badge&logo=python)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-black.svg?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
+[![License](https://img.shields.io/badge/License-MIT-orange.svg?style=for-the-badge)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-3.0.0-black.svg?style=for-the-badge)]()
 
-**Smart Screen Unlocker Recovery** is an advanced, automation-driven forensic and accessibility framework. It is specifically engineered to help mobile technicians, forensic experts, and everyday users recover access to Android devices with **completely broken displays, dead touch digitizers, or inaccessible screens**. 
-
-By injecting raw kernel-level touch gestures via an authorized ADB (Android Debug Bridge) interface, this tool acts as a synthetic hardware digitizer, allowing you to input your known pattern and recover your data.
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Screenshots](#-screenshots) • [API](#-api) • [Contributing](#-contributing)
 
 </div>
 
-> **⚠️ CRITICAL NOTICE:** This is **NOT** a cracking, brute-forcing, or bypassing tool. It requires the device to have USB Debugging enabled, an authorized RSA fingerprint with the host PC, and the user MUST know the correct lock screen pattern.
+---
+
+## 🎯 Overview
+
+**Smart Recovery Platform** is a comprehensive Android device recovery tool that combines **screen lock removal**, **FRP bypass**, and **remote device control** in a beautiful, modern interface. Built with cutting-edge technologies including real-time camera tracking, glassmorphism UI, and AI-powered recovery methods.
+
+### Why Choose Smart Recovery?
+
+- 🚀 **Multi-Platform**: Web, CLI, and API access
+- 🎨 **Beautiful UI**: Black & Orange glassmorphism design
+- 📱 **Camera Tracking**: Control interface with finger movements
+- 💰 **Coin System**: Earn rewards through referrals and successful recoveries
+- 🔧 **All Samsung Methods**: Including Exynos-specific exploits
+- 🖥️ **Built-in scrcpy**: Remote device control from browser
+- 🔒 **Secure**: Enterprise-grade authentication and encryption
 
 ---
 
-## 🔥 Unrivaled Features & Capabilities
+## ✨ Features
 
-* **🛡️ Multi-State Awareness (AFU/BFU):** Dynamically detects if the device is in *Before First Unlock (BFU)* or *After First Unlock (AFU)* states and adjusts the vertical matrix geometry accordingly.
-* **📐 Smart XML Container Bypassing:** Intelligently ignores fake, full-screen transparent containers deployed by modern security patches (e.g., Samsung OneUI 8+) to locate the true lock screen grid.
-* **🎨 Interactive Visual GUI:** Features a sleek, terminal-spawned graphical canvas allowing the technician to visually draw the pattern using a mouse, mirroring physical device interaction.
-* **⏱️ Auto-Timeout Prevention:** Automatically boosts the device's `screen_off_timeout` to 5 minutes during the operation to prevent screen sleep, seamlessly restoring the original settings post-injection.
-* **✅ Deep Kernel Verification:** Interrogates the Android OS (`dumpsys window` & `dumpsys keyguard`) to mathematically verify a successful unlock without relying on visual screen feedback.
+### 📱 Device Recovery
+- **Screen Lock Removal** (PIN/Pattern/Password)
+- **FRP Bypass** for all major brands
+- **Samsung Specialized Methods**
+  - Exynos 8890-990 exploits
+  - Combination firmware bypass
+  - TrustZone vulnerabilities
+  - DeKnox method
+  - Download mode exploits
+- **Android 5-14 Support**
+- **Automatic method selection**
+
+### 🎮 Remote Control
+- **Full scrcpy integration**
+- **Real-time screen streaming**
+- **Touch control from browser**
+- **Keyboard/mouse input**
+- **Screen recording**
+
+### 👁️ Camera Tracking
+- **Finger movement detection**
+- **Hand gesture controls**
+- **Face tracking for security**
+- **Motion-reactive UI elements**
+
+### 💰 Economy System
+- **Earn coins** through:
+  - Successful recoveries (10 coins)
+  - Referral program (50 coins)
+  - Daily bonuses
+  - Watching ads
+- **Spend coins on**:
+  - Premium FRP methods
+  - scrcpy sessions
+  - Priority support
+
+### 🎨 UI/UX
+- **Glassmorphism design**
+- **Animated FRP symbols**
+- **Particle effects**
+- **Responsive layout**
+- **Dark mode optimized**
+- **Real-time notifications**
+
+### 🔧 Technical
+- **REST API** with FastAPI
+- **WebSocket** for real-time control
+- **JWT Authentication**
+- **SQLite/PostgreSQL** database
+- **Docker support**
+- **CLI tool** included
 
 ---
-## 📸 Interface & Execution Preview
 
-| 🎛️ Live Interactive Drawer | 📊 Deep Telemetry & Execution Log |
-| :---: | :---: |
-| <img src="https://raw.githubusercontent.com/alisakkaf/Smart-Screen-Unlocker-Recovery/main/images/Unlock_Screen1.png" width="450" alt="Unlock Screen Custom Matrix"> | <img src="https://raw.githubusercontent.com/alisakkaf/Smart-Screen-Unlocker-Recovery/main/images/Unlock_Screen2.png" width="450" alt="Engine Execution and Verification"> |
-| <img src="https://raw.githubusercontent.com/alisakkaf/Smart-Screen-Unlocker-Recovery/main/images/Unlock_Screen3.png.png" width="450" alt="Live Hardware Touch Inference"> | <img src="https://raw.githubusercontent.com/alisakkaf/Smart-Screen-Unlocker-Recovery/main/images/ADB_Screen_Lock.png" width="450" alt="Device Connection & Handshake"> |
+## 📋 Supported Devices
 
----
-## ⚙️ The 6-Engine Multi-Attack Strategy
+| Brand | Screen Lock | FRP Bypass | Special Methods |
+|-------|------------|------------|-----------------|
+| **Samsung** | ✅ | ✅ | Exynos, Knox, FMM |
+| **Xiaomi** | ✅ | ✅ | Mi Account bypass |
+| **Google** | ✅ | ✅ | Account Manager |
+| **OnePlus** | ✅ | ✅ | OxygenOS methods |
+| **Motorola** | ✅ | ✅ | - |
+| **LG** | ✅ | ✅ | - |
+| **Huawei** | ✅ | ✅ | HiSuite exploit |
+| **OPPO/Vivo** | ✅ | ✅ | - |
+| **Realme** | ✅ | ✅ | - |
 
-To account for fragmentation across Android OEMs, DPI scaling, and custom UIs, this tool utilizes a sequential cascade of mathematical engines. If one fails, the script dynamically adjusts its geometry and fires the next!
+## Samsung Exynos Support Matrix
 
-| Engine | Strategy Name | Description | Target Devices |
-| :---: | :--- | :--- | :--- |
-| **1** | `Dynamic XML Hierarchy` | Attempts to pull the exact pixel bounds directly from the UI Automator tree. | Universal (If not blocked) |
-| **2** | `Golden Ratio Base Matrix`| Uses empirical OEM aspect ratios to calculate a mathematically perfect square or rectangle grid. | Samsung & Generic AOSP |
-| **3** | `DPI Shifted Matrix` | Compensates for users who have altered their display scaling (Small/Large UI sizes). | Universal |
-| **4** | `Custom High Matrix` | Targets shifted notification shade layouts, commonly found in Android 13+ environments. | Samsung & Custom ROMs |
-| **5** | `Custom Extreme Matrix` | Built from extreme-case hardware telemetry for unique screen resolutions. | Tall Aspect Ratios (21:9) |
-| **6** | `Cross-Over Failsafe` | Tests BFU matrices on AFU states (and vice-versa) in case of Knox or SystemUI desynchronization. | Universal |
-
----
-
-## 📱 Supported & Tested Devices
-
-This framework calculates screen matrices dynamically, making it theoretically compatible with **any Android device**. However, it has been rigorously tested and optimized for the following architectures:
-
-| OEM / Brand | Tested Models (Examples) | UI Environment | Success Rate |
-| :--- | :--- | :--- | :---: |
-| **Samsung** | Galaxy S24 (SM-S921U), Galaxy S23 (SM-S911U) | OneUI 5.0 - 8.5 | 🟢 100% |
-| **TCL** | T609DL, 30 SE, 40 XL | TCL UI / AOSP 12-13 | 🟢 100% |
-| **Xiaomi / POCO**| Redmi Note 12, POCO X5 | MIUI 14 / HyperOS | 🟢 High |
-| **Motorola** | Moto G Stylus, Edge series | MyUX / AOSP | 🟢 High |
-| **Google** | Pixel 6, Pixel 7, Pixel 8 | Pixel UI | 🟢 High |
+| Exynos Model | Devices | Methods Available |
+|--------------|---------|-------------------|
+| **8890** | S7, S7 Edge | Download Mode, TZ Exploit |
+| **8895** | S8, S8+, Note 8 | Download Mode, Comb. FW |
+| **9810** | S9, S9+, Note 9 | Comb. FW, DeKnox |
+| **9820/9825** | S10, Note 10 | Comb. FW, Knox Reset |
+| **990** | S20, Note 20 | Comb. FW, Security Patch |
 
 ---
 
-## 🚀 Installation & Usage
+## 🚀 Installation
 
-### 📦 Option 1: Standalone Windows Executable (Recommended)
-You do not need Python installed. Simply download the standalone `.exe` from the [Releases](https://github.com/alisakkaf/Smart-Screen-Unlocker-Recovery/releases) tab.
-
-1. Ensure **USB Debugging** is enabled on the target Android device.
-2. Connect the device to your PC and authorize the connection.
-3. Run `Smart_Screen_Unlocker.exe`.
-4. Draw your pattern on the interactive GUI and watch the terminal automate the injection!
-
-### 💻 Option 2: Running from Source
+### Quick Install (Linux/Termux/Mac)
 
 ```bash
-# Clone the repository
-git clone [https://github.com/alisakkaf/Smart-Screen-Unlocker-Recovery.git](https://github.com/alisakkaf/Smart-Screen-Unlocker-Recovery.git)
+# Clone repository
+git clone https://github.com/salmitoni86-png/Smart-Screen-Unlocker-Recovery.git
 cd Smart-Screen-Unlocker-Recovery
 
-# Install build dependencies (optional, for compiling)
+# Run installer
+chmod +x install.sh
+./install.sh
+
+Manual Installation
+<details> <summary><b>Termux (Android)</b></summary>
+bash
+# Update packages
+pkg update && pkg upgrade
+
+# Install dependencies
+pkg install python android-tools scrcpy git openssl
+
+# Install Python packages
 pip install -r requirements.txt
 
-# Execute the script
-python main.py 
+# Run server
+python backend/main.py
+</details><details> <summary><b>Linux/Chromebook</b></summary>
+bash
+# Install system dependencies
+sudo apt update
+sudo apt install python3-pip android-tools-adb scrcpy
 
-```
-## ✅ Post-Unlock Success: Complete Control via Scrcpy
+# Install Python packages
+pip3 install -r requirements.txt
 
-Once **Smart Screen Unlocker Recovery** successfully injects the kernel gestures and bypasses the secure BFU/AFU lockscreen state, your Android device is now fully unlocked and responsive to external display utilities. 
+# Run server
+python3 backend/main.py
+</details><details> <summary><b>Windows</b></summary>
+powershell
+# Install Python 3.8+ from python.org
+# Install ADB from Google Platform Tools
 
-You can immediately transition to [scrcpy](https://github.com/genymobile/scrcpy) to achieve full low-latency screen mirroring, audio forwarding, and peripheral control to safely back up your system data.
+# Clone and install
+git clone https://github.com/salmitoni86-png/Smart-Screen-Unlocker-Recovery.git
+cd Smart-Screen-Unlocker-Recovery
+pip install -r requirements.txt
 
-### 🚀 Quick Execution Guide:
+# Run server
+python backend/main.py
+</details><details> <summary><b>Docker</b></summary>
+bash
+# Build and run with Docker
+docker-compose up -d
 
-1. Keep your device connected via the authorized USB/Wireless ADB interface.
-2. Download and extract the latest version of `scrcpy` onto your host machine.
-3. Execute the following terminal commands depending on your recovery workflow:
+# Access at http://localhost:8000
+</details>
+💻 Usage
+Web Interface
+Start the server:
 
-```bash
-# Standard high-performance mirroring with the physical device screen off
-scrcpy --always-on-top --turn-screen-off --stay-awake
+bash
+python backend/main.py
+Open browser: http://localhost:8000
 
-# Advanced forensic stream optimized for backup operations
-scrcpy --max-fps=30 --video-bit-rate=4M --audio-bit-rate=128k --window-title="Recovered Device Screen"
+Register account / Login
 
----
+Connect device via USB
 
-## 🛠️ Compiling to .exe (For Developers)
+Select recovery method or use Auto-Recovery
 
-To bundle the utility into a portable runtime executable with your custom icon (`6437133.png`), execute this command in your PowerShell/CMD:
+CLI Tool
+bash
+# List connected devices
+python cli/smart_recovery_cli.py devices
 
-```powershell
-python -c "from PIL import Image; img = Image.open('6437133.png'); img.save('icon.ico', format='ICO')" ; pyinstaller --noconfirm --onefile --console --icon="icon.ico" --name="Smart_Screen_Unlocker" --clean main.py 
+# Get device info
+python cli/smart_recovery_cli.py info <serial>
 
-```
+# Auto-recovery
+python cli/smart_recovery_cli.py recover <serial> --type auto
 
----
+# Samsung FRP bypass
+python cli/smart_recovery_cli.py samsung-frp <serial>
 
-## 🌟 Support the Project
+# Start scrcpy
+python cli/smart_recovery_cli.py scrcpy <serial>
+API Access
+python
+import requests
 
-If this digital forensics asset saved your data or assisted your mobile repair workflow, please consider giving the repository a ⭐ **Star** to increase its distribution visibility across developer channels!
+# Login
+response = requests.post('http://localhost:8000/api/login', json={
+    'username': 'your_username',
+    'password': 'your_password'
+})
+token = response.json()['access_token']
 
-### 👨‍💻 Developer & Contact Portfolio
+# Start recovery
+headers = {'Authorization': f'Bearer {token}'}
+response = requests.post('http://localhost:8000/api/recovery/start', 
+    headers=headers,
+    json={
+        'device_serial': 'YOUR_DEVICE_SERIAL',
+        'recovery_type': 'frp_bypass',
+        'method': 'auto'
+    }
+)
+📸 Screenshots
+<div align="center">
+🎨 Glassmorphism Dashboard
+https://screenshots/dashboard.png
 
-* **Lead Engineer:** Ali Sakkaf
-* **🌐 Official Website:** [alisakkaf.com](https://alisakkaf.com)
-* **💻 GitHub:** [@alisakkaf](https://www.google.com/search?q=https://github.com/alisakkaf)
-* **🟦 Facebook:** [AliSakkaf.Dev](https://www.google.com/search?q=https://facebook.com/AliSakkaf.Dev)
+📱 Device Control with scrcpy
+https://screenshots/device_control.png
 
-### 💡 Support the Developer
+💰 Coin System
+https://screenshots/coin_system.png
+
+🎯 Recovery Process
+https://screenshots/recovery.png
+
+</div>
+🏗️ Architecture
+text
+┌─────────────────────────────────────────────────────────┐
+│                    Frontend (HTML/CSS/JS)                │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐ │
+│  │Dashboard │  │ Device   │  │ Recovery │  │  Admin   │ │
+│  │          │  │ Control  │  │  Tools   │  │  Panel   │ │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘ │
+└─────────────────────────────────────────────────────────┘
+                            │
+                    WebSocket│REST API
+                            │
+┌─────────────────────────────────────────────────────────┐
+│                   Backend (FastAPI)                      │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐ │
+│  │   Auth   │  │   ADB    │  │   FRP    │  │  Coin    │ │
+│  │  System  │  │ Manager  │  │ Methods  │  │  System  │ │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘ │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐ │
+│  │ scrcpy   │  │ Samsung  │  │  Camera  │  │ Database │ │
+│  │ Manager  │  │  Exynos  │  │ Tracker  │  │  (SQL)   │ │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘ │
+└─────────────────────────────────────────────────────────┘
+                            │
+                            │ ADB
+                            │
+┌─────────────────────────────────────────────────────────┐
+│                   Android Device                         │
+│         ┌──────────────────────────────┐                │
+│         │    Target Phone/Tablet       │                │
+│         │  (Locked / FRP Protected)    │                │
+│         └──────────────────────────────┘                │
+└─────────────────────────────────────────────────────────┘
+🔐 Security
+JWT Authentication with token expiration
+
+Password hashing with SHA-256 + salt
+
+HTTPS support (configurable)
+
+Rate limiting on API endpoints
+
+CORS configuration
+
+Input validation with Pydantic
+
+SQL injection prevention
+
+XSS protection
+
+⚙️ Configuration
+Create .env file:
+
+env
+# Server
+HOST=0.0.0.0
+PORT=8000
+DEBUG=true
+
+# Security
+SECRET_KEY=your-secret-key-here
+JWT_EXPIRY=60
+
+# Database
+DATABASE_URL=sqlite:///data/recovery.db
+
+# Coin System
+WELCOME_BONUS=10
+REFERRAL_REWARD=50
+PREMIUM_COST=20
+
+# Ads
+ADS_ENABLED=true
+AD_REWARD=5
+
+# Camera Tracking
+CAMERA_ENABLED=false
+CAMERA_DEVICE=0
+
+# scrcpy
+SCRCPY_PATH=/usr/bin/scrcpy
+SCRCPY_MAX_BITRATE=8M
+🧪 Testing
+bash
+# Run tests
+python -m pytest tests/
+
+# Test with coverage
+python -m pytest --cov=backend tests/
+🤝 Contributing
+We welcome contributions! See CONTRIBUTING.md
+
+Development Setup
+bash
+# Fork and clone
+git clone https://github.com/YOUR_USER/Smart-Screen-Unlocker-Recovery.git
+cd Smart-Screen-Unlocker-Recovery
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate  # Windows
+
+# Install dev dependencies
+pip install -r requirements-dev.txt
+
+# Run in development mode
+python backend/main.py --reload
+⚠️ Legal Disclaimer
+This tool is intended for legitimate purposes only:
+
+✅ Recovering YOUR OWN device
+
+✅ IT support with EXPLICIT permission
+
+✅ Forensic investigations with legal authorization
+
+❌ Unauthorized access to others' devices
+
+❌ Illegal activities
+
+❌ Violating privacy laws
+
+You are responsible for complying with all applicable laws.
+
+📄 License
+This project is licensed under the MIT License - see LICENSE file.
+
+🙏 Acknowledgments
+scrcpy - Genymobile's awesome screen mirroring
+
+MOBILedit Forensic - Research inspiration
+
+Oxygen Forensics - Method research
+
+Android Debug Bridge - Google's ADB tool
+
+FastAPI - Amazing Python framework
+
+📞 Support
+📧 Email: support@smartrecovery.io
+
+💬 Discord: Join our server
+
+🐦 Twitter: @SmartRecovery
+
+📖 Docs: docs.smartrecovery.io
+
+⭐ Star History
+https://api.star-history.com/svg?repos=salmitoni86-png/Smart-Screen-Unlocker-Recovery&type=Date
 
 <div align="center">
-  <i>If you find my tools and projects useful, consider supporting my work. Your support helps keep these projects completely free!</i>
-</div>
+Made with ❤️ by the Smart Recovery Team
+⬆ Back to Top
 
-<br>
-
-<div align="center">
-
-| Crypto Asset | Network | Wallet Address (Copy) | Quick Scan |
-| :--- | :--- | :--- | :---: |
-| ![USDT](https://img.shields.io/badge/USDT-Tether-26A17B?style=for-the-badge&logo=tether&logoColor=white) | **TRC20** | `TYLBeDA5aGNcc3WkVqf3xWPHXmsZzs2p28` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=TYLBeDA5aGNcc3WkVqf3xWPHXmsZzs2p28" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![USDT](https://img.shields.io/badge/USDT-Tether-26A17B?style=for-the-badge&logo=tether&logoColor=white) | **BEP20** | `0x67cf27f33c80479ea96372810f9e2ee4c3b095c5` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=0x67cf27f33c80479ea96372810f9e2ee4c3b095c5" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![BTC](https://img.shields.io/badge/BTC-Bitcoin-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white) | **Bitcoin** | `bc1q97dr37h37npzarmmrv0tjz2nm50htqc7pfpzj6` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=bitcoin:bc1q97dr37h37npzarmmrv0tjz2nm50htqc7pfpzj6" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![ETH](https://img.shields.io/badge/ETH-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white) | **ERC20** | `0x67cf27f33c80479ea96372810F9e2EE4C3b095C5` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=ethereum:0x67cf27f33c80479ea96372810F9e2EE4C3b095C5" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![SOL](https://img.shields.io/badge/SOL-Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white) | **Solana** | `Cbesgr4tvo4T1inNMFe46GSym2qMYjkmofbXFc77rDNK` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=solana:Cbesgr4tvo4T1inNMFe46GSym2qMYjkmofbXFc77rDNK" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![USDC](https://img.shields.io/badge/USDC-USD_Coin-2775CA?style=for-the-badge&logo=usd-coin&logoColor=white) | **ERC20** | `0x67cf27f33c80479ea96372810f9e2ee4c3b095c5` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=0x67cf27f33c80479ea96372810f9e2ee4c3b095c5" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![USDC](https://img.shields.io/badge/USDC-USD_Coin-2775CA?style=for-the-badge&logo=usd-coin&logoColor=white) | **SPL** | `Cbesgr4tvo4T1inNMFe46GSym2qMYjkmofbXFc77rDNK` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=solana:Cbesgr4tvo4T1inNMFe46GSym2qMYjkmofbXFc77rDNK" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-| ![USDC](https://img.shields.io/badge/USDC-USD_Coin-2775CA?style=for-the-badge&logo=usd-coin&logoColor=white) | **BEP20** | `0x67cf27f33c80479ea96372810F9e2EE4C3b095C5` | <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=0x67cf27f33c80479ea96372810F9e2EE4C3b095C5" target="_blank"><img src="https://img.shields.io/badge/Show_QR-Click_Here-black?style=flat-square&logo=qr-code" alt="QR"></a> |
-
-</div>
-
----
-
-
-
-**Developed By : Ali Sakkaf © 2026. All Rights Reserved.**
+</div> 
